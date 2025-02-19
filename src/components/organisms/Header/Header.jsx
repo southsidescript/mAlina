@@ -2,6 +2,7 @@ import Logo from "@/components/atoms/Logo/Logo";
 import style from '@/app/global.module.scss';
 import Link from "next/link";
 import Image from "next/image";
+import MobileMenuBtn from "@/components/atoms/MobileMenuBtn/MobileMenuBtn";
 const Header = () => {
 
 
@@ -32,16 +33,7 @@ const Header = () => {
                   EN/RU 
                </div>
                
-               <div>
-                  <button className={style.mobile_v_button}> 
-                     <Image 
-                     width={42}
-                     height={42}
-                     src={'/icons/mobile-menux64.png'}
-                     alt="mobile_v"
-                     />
-                     </button> 
-               </div>
+               <MobileMenuBtn/>
       </div>
 
      

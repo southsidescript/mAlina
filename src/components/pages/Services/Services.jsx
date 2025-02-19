@@ -10,7 +10,14 @@ const Services = () => {
                 </div>  
            
                  <div className={style.services_list}>
-                    
+                   <summary>
+                    <details>dwqdq</details>
+                    </summary>   
+
+                    <summary>
+                        
+                    <details>dwqdq</details>
+                    </summary>  
                  </div>
  
 
