@@ -12,7 +12,7 @@ const Welcome = () => {
                 src={'/main-img.JPG'}
                 fill
                 alt='portret'
-                sizes="(max-width: 640px) 10vw, (max-width: 1024px) 50vw, 33vw"
+                priority={true}
             
                 />   
             </article>     
