@@ -13,13 +13,6 @@
 }
 
 
-:root{
-    --main-font:"GeorgiaCustom";
-    --primary-font-size:2rem;
-    --small-font-size:1rem;
-}
-
-
 .logo{
    font-family: 'GeorgiaCustom';
    font-size: 1.9rem;
@@ -89,7 +82,7 @@
 
     &_desc{
         animation: slowDown 2s 1;
-        font-family: var(--main-font);
+        font-family: "GeorgiaCustom";
         height: 916px;
         width: 634px;
         padding: 40px;
@@ -131,13 +124,13 @@
 }
 
 .services{
-    font-family: var(--main-font);
+    font-family: "GeorgiaCustom";
     min-height: 100vh;
     display: flex;
     
     &_heading{
         width: 50%;
-        font-size:var(--primary-font-size);
+        font-size:2rem;
     }
 
     &_list{
@@ -237,7 +230,7 @@
 
                     }
                     &_title{
-                        font-size: var(--small-font-size);
+                        font-size: 1rem;
                     }
                 }
         }
