@@ -72,7 +72,8 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-
+    min-height: 100vh;
+   
     &_portret{
         animation: slowUp 2s 1;
         position: relative;
@@ -260,6 +261,7 @@
     
     .home{
         flex-wrap: wrap;
+        gap: 10px;
         
     }
 
