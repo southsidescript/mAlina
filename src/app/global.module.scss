@@ -83,12 +83,14 @@
     font-family: 'Arial';
     text-transform: uppercase;
     animation: swipeToLeft 1s 1;
-    font-family: 'GeorgiaClassic';
+    font-family: 'GeorgiaCustom';
+    font-size: 0.8rem;
     & ul{
         display: flex;
         flex-direction: column;
         height: 30%;
         justify-content: space-evenly;
+        text-align: right;
     }
 }
 
@@ -221,9 +223,7 @@
 }
   
 @media screen and (max-width:1329px){
-            .header{
-                
-            }
+           
             
             .home{
                 justify-content: space-evenly;
@@ -263,9 +263,7 @@
                 &_desc{
                     width: 326px;
                     height: 462px;
-                    &_name{
-
-                    }
+                  
                     &_title{
                         font-size: 1rem;
                     }
@@ -275,11 +273,7 @@
     }
 
 @media screen and (max-width:640px){
-        .header{
-
-        
-        
-        }
+   
         
         .home{
             flex-wrap: wrap;
