@@ -106,6 +106,8 @@
         position: relative;
         width: 634px;
         height: 916px;
+        border-radius: 5px;
+        overflow: hidden;
     }
 
     &_desc{
@@ -120,6 +122,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         position: relative;
+        border-radius:5px;
             &:after{
             content: '';
             animation: morph 10s infinite linear;
@@ -152,6 +155,7 @@
 }
 
 .services{
+    
     font-family: "GeorgiaCustom";
     min-height: 100vh;
     display: flex;
@@ -159,6 +163,7 @@
     &_heading{
         width: 50%;
         font-size:2rem;
+        
     }
 
     &_list{
@@ -167,8 +172,104 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 5%;
+
+        details {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            border-bottom: 1px solid #a7a7a7;
+            overflow: hidden;
+            
+            &  summary {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 12px 0;
+                list-style: none;
+                position: relative;
+                transition: color 0.3s ease;
+              &:hover {
+                color: #666;
+            }
+                &::after {
+                    animation: blink 3s infinite linear;
+                    content: "⯆";
+                    position: absolute;
+                    right: 0;
+                    transition: transform 0.3s ease;
+                }
+            }
+        }
+
+       & p{
+            font-size: 16px;
+            line-height: 1.5;
+          
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-5px);
+           transition: all 1s ease;
+        }
+
+   
+
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        details[open] p{
+     
+            opacity: 1;
+            transform: translateY(0);
+            padding-top: 10px;
+        }
+
+        }
     }
 
+.advantage{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+    & h2{
+        font-family: 'GeorgiaCustom';
+        font-size: 2rem;
+        margin: 100px auto;
+    }
+    
+    &_item{
+        font-family: 'GeorgiaClassic';
+        text-transform: uppercase;
+        font-weight: 550;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 200px;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    
+    &_list{
+        height: 20vh;
+        width: 100vw;
+        background: rgb(236, 236, 236);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+.footer{
+    background: rgb(252, 252, 252);
+    min-height: 80vh;
 }
 
 @keyframes slowUp{
@@ -222,6 +323,11 @@
     }
 }
   
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
 @media screen and (max-width:1329px){
            
             
@@ -274,7 +380,40 @@
 
 @media screen and (max-width:640px){
    
+        .services{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            &_list{
+                width: 100%;
+            }
+        }     
         
+         
+        .advantage{
+             min-height: 150vh;
+             
+            & h2{
+                text-align: center;
+            
+            }
+  
+            &_list{
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            &_item{
+              gap: 30px;
+              border-bottom:1px solid rgb(194, 194, 194) ;
+            }
+
+
+        }
+
+
+
         .home{
             flex-wrap: wrap;
                 

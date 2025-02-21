@@ -1,0 +1,59 @@
+.classic-button{
+
+ width: 350px;
+ outline: none;
+ background: linear-gradient(120deg,white 0,1%,black);
+ border: none;
+ height: 50px;
+color: white;
+font-family: 'GeorgiaCustom';
+border-radius: 5px;
+font-size: 1rem;
+overflow: hidden;
+position: relative;
+transition: all .2s ease;
+cursor: pointer;
+&::after{
+
+    content: '';
+    height: 50px;
+    width: 10px;
+ 
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    filter: blur(9px);
+    animation: flash 3s infinite linear;
+} 
+
+&:hover{
+    transform: scale(1.02);
+}
+
+}
+
+@keyframes flash{
+    0%{
+        opacity: 0;
+        transform: translateX(0) ;
+    }
+    10%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+    
+        transform: translateX(350px);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(350px) ;
+    
+    }
+}
