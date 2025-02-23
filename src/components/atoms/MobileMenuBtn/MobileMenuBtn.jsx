@@ -20,7 +20,7 @@ return(
         />
         </button> 
 
-     {isOpen?<MobileNav/>:''}
+     {isOpen?<MobileNav setIsOpen={setIsOpen} />:''}
   
     </>
      

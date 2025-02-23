@@ -5,7 +5,7 @@ import Container from "@/layouts/Container/Container";
 import Welcome from "@/components/pages/Welcome/welcome";
 import Services from "@/components/pages/Services/Services";
 import Advantage from "@/components/pages/Advantages/Advantage";
-import Footer from "@/components/pages/Footer/Footer";
+import Contacts from "@/components/pages/Footer/Contacts";
 
 export default function Home() {
   return (
@@ -17,8 +17,8 @@ export default function Home() {
                <Services/>
                <Advantage/>
            </Container>
-    
-           <Footer/>
+           <Contacts/>
+         
 
 
 

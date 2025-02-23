@@ -1,0 +1,31 @@
+.primary-button{
+    height: 50px;
+    width: 150px;
+    font-family: 'GeorgiaCustom';
+    background-color: rgb(29, 29, 29);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease;
+  position: relative;
+    &:hover{
+       background:  rgb(56, 56, 56);
+    }
+
+    &::after{
+
+        content: '';
+        height: 50px;
+        width: 10px;
+     
+        background: white;
+        position: absolute;
+        left: 0;
+        top: 0; 
+        filter: blur(9px);
+        animation: flash 3s infinite linear;
+
+    } 
+}

@@ -1,6 +1,9 @@
 import style from '@/app/global.module.scss'
 import Container from '@/layouts/Container/Container';
-import Accordion from '@/components/molecules/accordion/Accordion';
+import Accordion from '@/components/organisms/Accordion/Accordion';
+
+import Acc from '@/components/organisms/Accordion/Accordion';
+
 const Services = () => {
   
   const data = [
@@ -32,19 +35,26 @@ const Services = () => {
 
                 <div className={style.services_heading}>
                     <h2>Услуги</h2>
-                </div>  
+                    <p className={style.services_heading_title}>Продвижение, которое работает. Стратегии, которые приводят к результату!</p>
+                </div>    
            
                  <div className={style.services_list}>
-                    { 
+                     { 
                         data.map((item, index) => {
                             return(
                                 <Accordion key={index} title={item.title} text={item.text} />
                             )
                         })
 
-                    }
+                    } 
+
+
+
+
 
                  </div>
+
+
  
 
 
