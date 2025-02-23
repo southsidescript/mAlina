@@ -27,16 +27,16 @@ return(
 
       <ul>
                  <li>
-                    <Link href={'#'}>Консалтинг</Link>
+                    <Link href={'#home'}>Главная</Link>
                  </li>
                  <li>
-                    <Link href={'#'}>Анализ бренда</Link>
+                    <Link href={'#services'}>Услуги</Link>
                  </li>
                  <li>
-                    <Link href={'#'}>Стратегия</Link>
+                    <Link href={'#contacts'}>Контакты</Link>
                  </li>
                  <li>
-                    <Link href={'#'}>Smm&pr</Link>
+                    <Link href={'#advantages'}>Анализ</Link>
                  </li>
               </ul>
 

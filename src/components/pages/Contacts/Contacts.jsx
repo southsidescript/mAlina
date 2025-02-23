@@ -6,7 +6,7 @@ import PrimaryButton from '@/components/atoms/Button_Primary/PrimaryButton';
 const Contacts = () => {
 
     return(
-        <section className={style.contacts}>
+        <section id='contacts' className={style.contacts}>
                <Container>
                  
                <div className={style.contacts_heading}>
@@ -20,8 +20,8 @@ const Contacts = () => {
                         <Link href={'#'}>
                                   <Image
                                   src={'/icons/twitterx72.png'}
-                                  width={67}
-                                  height={47}
+                                  width={60}
+                                  height={40}
                                   alt='twitter'
                                   />
                                 </Link>
@@ -29,8 +29,8 @@ const Contacts = () => {
                                 <Link href={''}>
                                   <Image
                                   src={'/icons/vkx100.png'}
-                                  width={46}
-                                  height={46}
+                                  width={38}
+                                  height={38}
                                   alt='vk'
                                   />
                                 </Link>
@@ -39,8 +39,8 @@ const Contacts = () => {
                                 <Link href={''}>
                                   <Image
                                   src={'/icons/tmex72.png'}
-                                  width={46}
-                                  height={46}
+                                  width={38}
+                                  height={38}
                                   alt='tme'
                                   />
                                 </Link>
@@ -48,7 +48,7 @@ const Contacts = () => {
 
 
                         </div>
-                        
+
                         <div className={style.contacts_form}>
                             <form>
                              <input type="text"  placeholder='Как вас зовут ?'/>

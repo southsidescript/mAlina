@@ -29,7 +29,7 @@ return(
        
 
 
-    <section className={style.advantage}>
+    <section id='advantages' className={style.advantage}>
    
        <h2>Преимущества работы со мной</h2>
         

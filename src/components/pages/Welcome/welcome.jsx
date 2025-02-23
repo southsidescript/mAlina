@@ -6,7 +6,7 @@ import TypeWritter from '@/components/organisms/TypeWritter/Typewritter';
 const Welcome = () => {
 
     return(
-        <section className={style.home}>
+        <section id='home' className={style.home}>
            <article      className={style.home_portret}>
             <Image
                 src={'/main-img.JPG'}
