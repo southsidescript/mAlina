@@ -41,7 +41,7 @@ const Services = () => {
 
                 <div className={style.services_heading}>
                   <Heading> Услуги</Heading>
-                    <p className={style.services_heading_title}><TypeWritter content={dataForTypewritter}/></p>
+                    <p className={style.services_heading_title}><TypeWritter content={dataForTypewritter} isCursor={true} color={'black'} /></p>
                 </div>    
            
                  <div className={style.services_list}>

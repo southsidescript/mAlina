@@ -2,7 +2,7 @@
     width: 400px;
     border: 1px solid rgb(202, 202, 202);
     padding: 10px;
-    border-radius: 5px;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,17 +19,22 @@
         height: 40px;
         display: flex;
         align-items: center;
-        align-content: center;
-        justify-content: space-between;
       
+        justify-content: space-between;
+       
         &_open{
             transition: all 0.5s ease;
             transform: rotate(180deg);  
+            font-size: 24px;
+            align-self: flex-start;
         }
 
         &_close{
             transition: all 0.5s ease;
             transform: rotate(0deg);  
+            font-size: 20px;
+            color: darkslategrey;
+            align-self: flex-start;
         }
       }
 

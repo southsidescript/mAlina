@@ -2,6 +2,7 @@ import style from '@/app/global.module.scss'
 import Typewritter from '@/components/organisms/TypeWritter/Typewritter';
 import Image from 'next/image';
 import TypeWritter from '@/components/organisms/TypeWritter/Typewritter';
+import { Suspense } from 'react';
 
 const Welcome = () => {
   const data =  ['Разрабатывает стратегии', 'Создает положительный имидж', 'Повышает имидж бренда', 'Привлекает новых клиентов через эффективные стратегии']
@@ -11,6 +12,8 @@ const Welcome = () => {
     return(
         <section id='home' className={style.home}>
            <article      className={style.home_portret}>
+
+      
             <Image
                 src={'/main-img.JPG'}
                 fill
@@ -18,6 +21,8 @@ const Welcome = () => {
                 priority={true}
             
                 />   
+  
+           
             </article>     
            
 

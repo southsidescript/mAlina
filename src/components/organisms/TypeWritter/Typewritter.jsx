@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const TypeWritter = (props) => {
 
-    const {content} = props;
+    const {content,isCursor,color} = props;
 return(  
     <Typewriter {
         ...{
@@ -11,9 +11,9 @@ return(
             loop:true,
             delay: 50,
             typingSpeed: 200,
-            cursor: false,
-            cursorColor: 'red',
-              cursorStyle:'_'
+            cursor: isCursor,
+            cursorColor: color,
+              cursorStyle:'|'
         }
 
     } />

@@ -67,8 +67,6 @@
     }
 }
 
-
-
 .mobile_nav{
     position: fixed;
     top: 0;
@@ -183,6 +181,7 @@
         &_title{
             font-size: 1.1rem;
             color: gray;
+            height: 50px;
         }
     }
 
@@ -197,7 +196,7 @@
     
 
         }
-    }
+}
 
 .advantage{
     min-height: 100vh;
@@ -236,7 +235,6 @@
     }
 
 }
-
 
 .contacts{
     margin-top: 100px;
@@ -304,6 +302,24 @@
 
 
 }
+
+.footer{
+   border-top: 1px solid black;
+    & h2{
+        font-family: 'GeorgiaCustom';
+        width: 400px;
+        font-size: 4rem;
+    
+    }
+}
+
+
+
+
+
+
+
+
 
 @keyframes slowUp{
     0%{
