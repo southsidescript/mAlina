@@ -1,9 +1,9 @@
 import style from '@/app/global.module.scss'
 import Container from '@/layouts/Container/Container';
 import Accordion from '@/components/organisms/Accordion/Accordion';
-
+import TypeWritter from '@/components/organisms/TypeWritter/Typewritter';
 import Acc from '@/components/organisms/Accordion/Accordion';
-
+import Heading from '@/components/atoms/Heading/Heading';
 const Services = () => {
   
   const data = [
@@ -25,6 +25,12 @@ const Services = () => {
 
     }
     
+  ];
+  const dataForTypewritter = [
+    'Продвижение, которое работает. Стратегии, которые приводят к результату!',
+    'Ключ к успеху — в стратегии, а не в удаче.',
+    'Мы делаем больше, чем просто привлекаем внимание. Мы создаем доверие.',
+    'Инновационные стратегии для устойчивого роста вашего бизнеса.'
   ]
 
 
@@ -34,8 +40,8 @@ const Services = () => {
         <section id='services' className={style.services}>
 
                 <div className={style.services_heading}>
-                    <h2>Услуги</h2>
-                    <p className={style.services_heading_title}>Продвижение, которое работает. Стратегии, которые приводят к результату!</p>
+                  <Heading> Услуги</Heading>
+                    <p className={style.services_heading_title}><TypeWritter content={dataForTypewritter}/></p>
                 </div>    
            
                  <div className={style.services_list}>

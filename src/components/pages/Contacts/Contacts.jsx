@@ -19,8 +19,8 @@ const Contacts = () => {
                         <div className={style.contacts_social_medias}>
                         <Link href={'#'}>
                                   <Image
-                                  src={'/icons/twitterx72.png'}
-                                  width={60}
+                                  src={'/icons/twitterx100.png'}
+                                  width={40}
                                   height={40}
                                   alt='twitter'
                                   />
@@ -29,8 +29,8 @@ const Contacts = () => {
                                 <Link href={''}>
                                   <Image
                                   src={'/icons/vkx100.png'}
-                                  width={38}
-                                  height={38}
+                                  width={40}
+                                  height={40}
                                   alt='vk'
                                   />
                                 </Link>
@@ -38,9 +38,9 @@ const Contacts = () => {
 
                                 <Link href={''}>
                                   <Image
-                                  src={'/icons/tmex72.png'}
-                                  width={38}
-                                  height={38}
+                                  src={'/icons/tmex100.png'}
+                                  width={40}
+                                  height={40}
                                   alt='tme'
                                   />
                                 </Link>

@@ -1,9 +1,11 @@
 import style from '@/app/global.module.scss';
 import ClassicButton from '@/components/atoms/Button/ClassicButton';
 import AdvantageItem from '@/components/molecules/advantage-item/advantageItem';
+import Heading from '@/components/atoms/Heading/Heading';
 
 const Advantage = () => {
-  
+
+
   const data = [
 
     {   
@@ -31,7 +33,7 @@ return(
 
     <section id='advantages' className={style.advantage}>
    
-       <h2>Преимущества работы со мной</h2>
+    <Heading>Преимущества работы со мной</Heading>
         
         <div className={style.advantage_list}>
               {data.map((item,index) => <AdvantageItem key={index} {...item} />)}

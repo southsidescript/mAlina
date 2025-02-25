@@ -7,9 +7,10 @@ const ClassicButton = ({children}) => {
 
     return(
         <button className='classic-button'>
-<Link href="https://wa.me/79283912509"   >
+            
+        <Link href="https://wa.me/79283912509"   >
             {children}
-          </Link>
+        </Link>
 
 
         </button>

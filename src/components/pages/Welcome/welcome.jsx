@@ -4,6 +4,9 @@ import Image from 'next/image';
 import TypeWritter from '@/components/organisms/TypeWritter/Typewritter';
 
 const Welcome = () => {
+  const data =  ['Разрабатывает стратегии', 'Создает положительный имидж', 'Повышает имидж бренда', 'Привлекает новых клиентов через эффективные стратегии']
+
+
 
     return(
         <section id='home' className={style.home}>
@@ -23,7 +26,7 @@ const Welcome = () => {
                 <div className={style.home_desc_name}>Алина</div>
                 <div className={style.home_desc_title}>Квалифицированный маркетолог международного уровня</div> 
                  <div className={style.home_desc_skills}>
-                     <TypeWritter/>
+                     <TypeWritter content={data} />
                  </div>
 
                

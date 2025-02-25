@@ -1,11 +1,13 @@
 'use client'
 import { Typewriter } from 'react-simple-typewriter'
 
-const TypeWritter = () => {
+const TypeWritter = (props) => {
+
+    const {content} = props;
 return(  
     <Typewriter {
         ...{
-            words: ['Разрабатывает стратегии', 'Создает положительный имидж', 'Повышает имидж бренда', 'Привлекает новых клиентов через эффективные стратегии'],
+            words:content,
             loop:true,
             delay: 50,
             typingSpeed: 200,

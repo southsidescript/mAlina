@@ -67,6 +67,8 @@
     }
 }
 
+
+
 .mobile_nav{
     position: fixed;
     top: 0;
@@ -170,11 +172,14 @@
     display: flex;
     
     &_heading{
+     
         width: 50%;
         font-size:2rem;
         display: flex;
         flex-direction: column;
         gap: 10px;
+         
+
         &_title{
             font-size: 1.1rem;
             color: gray;
