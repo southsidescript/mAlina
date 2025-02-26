@@ -23,13 +23,13 @@ const Accordion = (props) => {
 
 {title}
                 <div className={isOpen?'accordion_summary_open': 'accordion_summary_close'} >
-                        {/* <Image
-                         src={'/icons/arrow_down.png'}
+                         <Image
+                         src={'/icons/arrow-down-left.svg'}
                          width={26}
                          height={26}
                          alt='arrow-down'
-                        /> */}
-                        🡧 
+                        /> 
+                        
                 </div>    
               </div>
       
