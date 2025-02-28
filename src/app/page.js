@@ -6,7 +6,7 @@ import Services from "@/components/pages/Services/Services";
 import Advantage from "@/components/pages/Advantages/Advantage";
 import Contacts from "@/components/pages/Contacts/Contacts";
 import Footer from "@/components/pages/Footer/Footer";
-
+import Copyright from '@/components/atoms/Copyright/Copyright';
 export default function Home() {
   return (
      <div className={styles.global}>
@@ -19,7 +19,7 @@ export default function Home() {
            </Container>
            <Contacts/>
            <Footer/>
-        
+          <Copyright/>
 
      </div>
   );
