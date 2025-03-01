@@ -6,14 +6,16 @@ const ClassicButton = ({children}) => {
 
 
     return(
-        <button className='classic-button'>
-            
         <Link href="https://wa.me/79283912509"   >
-            {children}
+            <button className='classic-button'>
+                
+    
+                {children}
+        
+
+
+            </button>
         </Link>
-
-
-        </button>
     )
 }
 
