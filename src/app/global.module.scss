@@ -360,7 +360,7 @@
             flex-direction: column;
             gap: 20px;
             & p{
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             
             & input{
@@ -388,6 +388,7 @@
                 border: none;
                 & legend{
                     font-size: 0.8rem;
+                    font-family: Arial;
                 }
             }
 
@@ -409,6 +410,7 @@
                 font-size: 0.7rem;
                 font-family: monospace;
                 height: 40px;
+                border-radius: 3px;
                 &:hover{
                     background: black;
                     color: white;
