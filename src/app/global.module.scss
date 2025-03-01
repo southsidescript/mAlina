@@ -240,9 +240,10 @@
     margin-top: 100px;
     background: rgb(252, 252, 252);
     min-height: 80vh;
-   
+
+
     &_heading{
-      height: 100px;
+      height: 100px;  flex-direction: column-reverse;
       font-family: 'GeorgiaCustom';
       font-size: 2rem;
       text-align: center;
@@ -252,7 +253,7 @@
     &_content{
         width: 100%;
         display: flex;   
-     
+        
         min-height: 80vh;
     }
 
@@ -351,6 +352,8 @@
         &_email{
             font-size: 2rem;
             font-family: 'GeorgiaCustom';
+            position: relative;
+          
         }
          &_form{
             display: flex;
@@ -403,9 +406,13 @@
                 width: 80px;
                 text-align: center;
                 align-content: center;
-                font-size: 0.8rem;
+                font-size: 0.7rem;
                 font-family: monospace;
                 height: 40px;
+                &:hover{
+                    background: black;
+                    color: white;
+                }
             }
         }
         
@@ -616,7 +623,7 @@
              
 
             &_content{
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: center;
                 justify-content: space-evenly   ;
             }

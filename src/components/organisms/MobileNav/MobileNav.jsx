@@ -27,16 +27,16 @@ return(
 
       <ul>
                  <li>
-                    <Link href={'#home'}>Главная</Link>
+                    <Link onClick={()=>{setIsOpen(false)}} href={'#home'}>Главная</Link>
                  </li>
                  <li>
-                    <Link href={'#services'}>Услуги</Link>
+                    <Link onClick={()=>{setIsOpen(false)}} href={'#services'}>Услуги</Link>
                  </li>
                  <li>
-                    <Link href={'#contacts'}>Контакты</Link>
+                    <Link onClick={()=>{setIsOpen(false)}} href={'#contacts'}>Контакты</Link>
                  </li>
                  <li>
-                    <Link href={'#advantages'}>Анализ</Link>
+                    <Link onClick={()=>{setIsOpen(false)}} href={'#advantages'}>Анализ</Link>
                  </li>
               </ul>
 
