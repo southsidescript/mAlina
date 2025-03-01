@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Container from '@/layouts/Container/Container';
 import PrimaryButton from '@/components/atoms/Button_Primary/PrimaryButton';
+import Heading from '@/components/atoms/Heading/Heading';
 const Contacts = () => {
 
     return(
@@ -10,7 +11,7 @@ const Contacts = () => {
                <Container>
                  
                <div className={style.contacts_heading}>
-                    <h2>Оставить заявку</h2>
+                    <Heading>Оставить заявку</Heading>
                 </div>  
            
                  <div className={style.contacts_content}>
