@@ -11,18 +11,12 @@ const Footer = () => {
         <footer className={style.footer}>
           <Container>
               <h2>СВЯЖИТЕСЬ С НАМИ 
-                  <Image src={'/icons/arrow-down-left.svg'}
-                   width={44}
-                    height={44}
-                    alt='arrow-down-left'
-                    />
+                 
                 </h2> 
 
               <div className={style.footer_info}>
                    <div className={style.footer_about}>
-                        <div className={style.footer_about_logo}>
-                            Logo
-                        </div>
+                       
                         
                         <div className={style.footer_about_title}>
                             Мы rasSVET ценим вашу конфиденциальность и принимаем все необходимые меры для защиты ваших персональных данных.
@@ -49,36 +43,60 @@ const Footer = () => {
                             Наш сайт использует файлы cookie для улучшения пользовательского опыта и анализа трафика. Вы можете настроить браузер на блокировку cookie или уведомление о них.
                         </div>
                             
+                     
                    </div>
 
+                   
+
                    <div className={style.footer_other}>
+                         
+                         
+                     <div className={style.footer_other_logo}>
+                           <Image
+                           src={'/icons/logo.png'}
+                           width={200}
+                           height={200}
+                           alt='logo'
+                           />
+                        </div> 
 
-                            <div className={style.footer_other_email}>rassvetpr@gmail.com</div>
+                         <div className={style.footer_other_social}>
+                         <Link href={'#'}>
+                                  <Image
+                                  src={'/icons/x_light.png'}
+                                  width={40}
+                                  height={40}
+                                  alt='twitter'
+                                  />
+                                </Link>
+
+                                <Link href={''}>
+                                  <Image
+                                  src={'/icons/vk_light.png'}
+                                  width={35}
+                                  height={35}
+                                  alt='vk'
+                                  />
+                                </Link>
+
+
+                                <Link href={''}>
+                                  <Image
+                                  src={'/icons/tme_light.png'}
+                                  width={35}
+                                  height={35}
+                                  alt='tme'
+                                  />
+                                </Link>
+ 
+
+                         </div>
+
+                            <div className={style.footer_other_email}>alinafomenko939@gmail.com</div>
               
+                             
                             
-                            <div className={style.footer_other_medias}>
-                                     <Link href={''}> 
-                                        <div className={style.footer_other_medias_vk}>Vkontakte</div>
-                                      </Link>
-                                     <Link href={''}> 
-                                        <div className={style.footer_other_medias_tme}>Telegram</div>
-                                     </Link>
-                                     <Link href={''}> 
-                                         <div className={style.footer_other_medias_twitter}>Twitter</div>
-                                     </Link>
-
-
-                            </div>
-                            
-                            <div className={style.footer_other_form}>
-                               <p> Подписаться на рассылку</p>
-                                <fieldset>
-                                    <legend>Email</legend>
-                                    <input type="text"  />
-                                    <button>Подписаться</button>
-                                </fieldset>
-                           
-                            </div>
+                         
 
 
                    </div>

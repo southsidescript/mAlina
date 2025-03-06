@@ -7,7 +7,10 @@ const Advantage = () => {
 
 
   const data = [
-
+    {
+        ico:'./icons/box.svg',
+        text:'Профессионализм'
+    },
     {   
         ico:'./icons/activity.svg',
         text:'Экспертиза'
@@ -16,10 +19,7 @@ const Advantage = () => {
         ico:'./icons/bar-chart-2.svg',
         text:'Персональный подход'
     },
-    {
-        ico:'./icons/box.svg',
-        text:'Профессионализм'
-    },
+ 
     {
         ico:'./icons/dollar-sign.svg',
         text:'Экономия времени & ресурсов'
@@ -33,7 +33,7 @@ return(
 
     <section id='advantages' className={style.advantage}>
    
-    <Heading>Преимущества работы со мной</Heading>
+    <Heading>Преимущества работы вместе со мной</Heading>
         
         <div className={style.advantage_list}>
               {data.map((item,index) => <AdvantageItem key={index} {...item} />)}

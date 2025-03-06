@@ -2,8 +2,9 @@ import style from '@/app/global.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import Container from '@/layouts/Container/Container';
-import PrimaryButton from '@/components/atoms/Button_Primary/PrimaryButton';
+
 import Heading from '@/components/atoms/Heading/Heading';
+import Form from '@/components/organisms/Form/Form';
 const Contacts = () => {
 
     return(
@@ -51,13 +52,7 @@ const Contacts = () => {
                         </div>
 
                         <div className={style.contacts_form}>
-                            <form>
-                             <input type="text"  placeholder='Как вас зовут ?'/>
-                             <input type="text"  placeholder='Какой у вас email ?'/>
-                             <input type="text"  placeholder='Какой у вас номер телефона ?'/>
-                          <PrimaryButton>Связаться</PrimaryButton>
-
-                            </form>
+                          <Form />
                         </div>
 
                  </div>

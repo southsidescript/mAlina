@@ -31,7 +31,11 @@ const Welcome = () => {
                 <div className={style.home_desc_name}>Алина</div>
                 <div className={style.home_desc_title}>Квалифицированный маркетолог международного уровня</div> 
                  <div className={style.home_desc_skills}>
-                     <TypeWritter content={data} />
+                     <ul>
+                        <li>Создает положительный имидж</li>
+                        <li>Повышает узнаваемость бренда</li>
+                        <li>Привлекает новых клиентов через эффективные стратегии</li>
+                    </ul>
                  </div>
 
                

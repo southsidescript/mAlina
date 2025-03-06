@@ -1,9 +1,10 @@
 
 import './PrimaryButton.css';
 
-const PrimaryButton = ({children}) => {
+const PrimaryButton = ({children,send}) => {
     return (
-        <button  className="primary-button">
+      
+        <button onClick={send}  className="primary-button">
           {children}
          
         </button>
