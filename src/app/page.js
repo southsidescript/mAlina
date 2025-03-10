@@ -15,8 +15,8 @@ export default function Home() {
           <Container>
                <Welcome/>
                <Services/>
-               <Advantage/>
            </Container>
+           <Advantage/>
            <Contacts/>
            <Footer/>
           <Copyright/>

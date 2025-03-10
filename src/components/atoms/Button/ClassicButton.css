@@ -58,7 +58,7 @@ cursor: pointer;
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:395px) {
     .classic-button{
         width: 250px;
     }

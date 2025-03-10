@@ -34,7 +34,17 @@ const Form = () => {
     )
     .then(res=>res.json())
     .then(data=>{console.log(data)}) 
-   
+     
+    fetch('api/contact',{
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify(user)
+    })
+    .then(res=>res.json())
+    .then(data=>{console.log('Это дата из contact.api' + data)})
+
    }
 
     return(

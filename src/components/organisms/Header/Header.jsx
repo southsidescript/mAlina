@@ -30,7 +30,7 @@ const Header = () => {
 
       <div className={style.header_actions}>
               <div className={style.header_locale}>
-                  EN/RU 
+                  EN  <strong>RU </strong> 
                </div>
                
                <MobileMenuBtn/>
