@@ -1,17 +1,19 @@
 'use client'
 import { useEffect, useState } from "react";
 import PrimaryButton from '@/components/atoms/Button_Primary/PrimaryButton';
-
+import Notification from "@/components/molecules/notification/Notification";
 
 
 const Form = () => {
 
   const [user,setUser] = useState({});
-  
+  const [sended,setSended] = useState(false);
 
 
    function sendMesage(e){
-         
+      
+    setSended(true);
+    setTimeout(()=>{setSended(false)},4000);
     
     let message = `У Вас новый лид ,Алина! \n
 
@@ -48,7 +50,9 @@ const Form = () => {
    }
 
     return(
-        
+        <>
+        {sended? <Notification/>:''}
+       
         <form>
             <input onBlur={(e)=>{
                 setUser({...user,name:e.target.value});
@@ -67,7 +71,7 @@ const Form = () => {
        </form>
 
 
-
+       </>
     )
 }
 
