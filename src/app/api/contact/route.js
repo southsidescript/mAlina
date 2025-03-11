@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    const { name, email, message } = await req.json();
+    const  message  = await req.json();
 
     // Настройка SMTP транспорта
     let transporter = nodemailer.createTransport({
@@ -16,9 +16,9 @@ export async function POST(req) {
     // Настройка письма
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: "southsidescript2023@gmail.com", // Твоя почта
+      to: "alinafomenko939@gmail.com", // Твоя почта
       subject: "Новое сообщение с сайта",
-      text: `Имя: \nEmail: \nСообщение: `,
+      text: message,
     });
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });

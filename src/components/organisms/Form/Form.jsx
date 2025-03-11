@@ -25,6 +25,7 @@ const Form = () => {
     console.log('МОМЕНТ ОТПРАВКИ:',message)
 
     e.preventDefault();
+
     fetch('api/telegram',
         {
             method:'POST',
@@ -42,7 +43,7 @@ const Form = () => {
         headers:{
             'Content-Type':'application/json'
         },
-        body:JSON.stringify(user)
+        body:JSON.stringify(message)
     })
     .then(res=>res.json())
     .then(data=>{console.log('Это дата из contact.api' + data)})
