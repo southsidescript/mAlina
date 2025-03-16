@@ -93,7 +93,7 @@ const Footer = () => {
 
                          </div>
 
-                            <div className={style.footer_other_email}>alinafomenko939@gmail.com</div>
+                            <div className={style.footer_other_email}>malina250988@icloud.com</div>
               
                              
                             
